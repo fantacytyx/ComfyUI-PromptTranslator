@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-PromptTranslator"
+description = "ComfyUI Prompt translator，自动识别支持的语言,兼容英文"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["translate", "langid", "transformers"]
+
+[project.urls]
+Repository = "https://github.com/fantacytyx/ComfyUI-PromptTranslator"
+
+[tool.comfy]
+PublisherId = "ComfyUI-PromptTranslator"
+DisplayName = "PromptTranslator"
+Icon = ""
