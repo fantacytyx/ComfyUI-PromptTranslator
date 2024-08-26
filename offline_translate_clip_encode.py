@@ -179,7 +179,7 @@ class OfflineTranslateClipEncode:
     @staticmethod
     def detect_and_translate(text, from_lang):
         """根据标点符号分割字符串，然后检测语言。第一个非英文的文本语言作为认定语言"""
-        split_text = re.split(r'[.,;!?…—。，;！？、]', text)
+        split_text = re.split(r'[,;!?…—。，;！？、]', text)
         _print(f"分割后的文本：{split_text}")  # 打印分割后的文本到控制台
         sub_text_after_translate = []
         for sub_text in split_text:
